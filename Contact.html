@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 3;
+            padding: 3;
+            background-image: url('b2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+   nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px; 
+    transition: background-color 0.5s;
+}
+nav a:hover {
+    text-decoration: none;
+    background-color: #1db791;  /* Color of the menu item when hovered */
+    color: #fff;  /* Text color when hovered */
+}
+ .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.495);
+            border-radius: 15px;
+        }
+
+        img.logo {
+            max-width: 90px;
+            display: block;
+            margin: 25px auto;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #04a5aa;
+            color: #e60202;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 15px 20px;
+            background-color: #050505;
+            color: #f90404;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 15px;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+         .btn:hover{
+            opacity: 1;
+            transform: scale(1.02);
+         }
+
+    
+        #contact{
+            width: 45%;
+            margin: auto;
+        }
+        #contact input, #contact textarea{
+            width: 80%;
+            margin: 5px auto;
+            padding: 8px 16px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <img src="re.webp" alt="Nilotpal Roy" class="logo">
+        <h2>Contact Us</h2>
+        <div id="contact">
+
+            <form action="submit_contact.php" method="post">
+                <label for="name">Full Name:</label> <br>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name"> <br> <br>
+                
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required> <br> <br>
+                
+                <label for="message">Message:</label> <br>
+                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea> <br> <br>
+                
+                <input type="submit" class="btn" value="Send Message">
+            </form>
+        </div>
+    </div>
+        <footer>
+        &copy; 2023 Nilotpal Roy. All rights reserved.
+    </footer>
+</body>
+</html>

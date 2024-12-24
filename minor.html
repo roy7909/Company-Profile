@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 3;
+            padding: 3;
+            background-image: url('b2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px; 
+            transition: background-color 0.5s;
+        }
+        nav a:hover {
+            text-decoration: none;
+            background-color: #1db791;  /* Color of the menu item when hovered */
+            color: #fff;  /* Text color when hovered */
+        }
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.495);
+            border-radius: 15px;
+        }
+        img.logo {
+            max-width: 90px;
+            display: block;
+            margin: 25px auto;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #04a5aa;
+            color: #e60202;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 25px;
+        }
+        .btn {
+            padding: 15px 20px;
+            background-color: #050505;
+            color: #f90404;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 15px;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            opacity: 1;
+            transform: scale(1.02);
+        }
+
+        #contact{
+            width: 45%;
+            margin: auto;
+        }
+        #contact input, #contact textarea{
+            width: 80%;
+            margin: 5px auto;
+            padding: 8px 16px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Company Profile Landing Page</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <img src="re.webp" alt="Nilotpal Roy" class="logo">
+        <center><b><h1>Company Name</h1></b></center>
+
+        <h2>Company Information</h2>
+        <p>
+            Overview:<br>
+            Founded: 2005<br>
+            Headquarters: Silicon Valley, California<br>
+            Industry: Technology and Innovation<br>
+            Founders:<br>
+            Sarah Johnson<br>
+            Mark Rodriguez<br>
+            Mission:<br>
+            To pioneer innovative solutions that transform the way people live and work.<br>
+            Products/Services:<br>
+            Tech Innovators Inc. is a leading provider of cutting-edge technology solutions, specializing in:<br>
+            Artificial Intelligence<br>
+            Cloud Computing<br>
+            Robotics<br>
+            Internet of Things (IoT)<br>
+            Software Development<br>
+            Key Achievements:<br>
+            Received several industry awards for technological innovation.<br>
+            Developed a breakthrough AI algorithm that optimizes energy consumption in smart homes.<br>
+            Global Presence:<br>
+            Tech Innovators Inc. has a global footprint, with offices in major cities worldwide.<br>
+            Partnerships:<br>
+            Collaborates with leading tech companies, universities, and research institutions to foster innovation.<br>
+            Employee Count:<br>
+            Over 5,000 employees worldwide, comprising a diverse and talented workforce.<br>
+            Financials:<br>
+            Publicly traded on the New York Stock Exchange (Ticker: TII).<br>
+            Annual revenue: $2.5 billion (as of the latest available financial report).<br>
+            Corporate Social Responsibility (CSR):<br>
+            Actively involved in community initiatives, supporting education and environmental sustainability.
+        </p>
+        <h2>Contact Information</h2>
+        <h3>Address:</h3>
+        <p>Company Address</p>
+        <h3>Email:</h3>
+        <p>Company Email</p>
+        <h3>Phone:</h3>
+        <p>Company Phone</p>
+    </div>
+
+    <footer>
+        &copy; 2023 Company Name. All rights reserved.
+    </footer>
+
+    <!-- About Us Section -->
+    <div class="container">
+        <img src="re.webp" alt="Nilotpal Roy" class="logo">
+        <h2>About Us</h2>
+        <p>
+            InnovateTech Solutions is a cutting-edge technology company founded in 2010. We are dedicated to pushing the boundaries of innovation and providing transformative solutions to our clients. Our team consists of highly skilled professionals with expertise in various technological domains.
+        </p>
+        <p>
+            At InnovateTech, we believe in the power of technology to drive positive change. Our mission is to create innovative solutions that enhance efficiency, productivity, and user experiences. We are committed to staying at the forefront of technological advancements and delivering exceptional value to our clients.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2023 Company Name. All rights reserved.
+    </footer>
+
+        <!-- Contact Form -->
+        <div class="container">
+            <img src="re.webp" alt="Nilotpal Roy" class="logo">
+            <h2>Contact Us</h2>
+            <div id="contact">
+    
+                <form action="submit_contact.php" method="post">
+                    <label for="name">Full Name:</label> <br>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name"> <br> <br>
+                    
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required> <br> <br>
+                    
+                    <label for="message">Message:</label> <br>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea> <br> <br>
+                    
+                    <input type="submit" class="btn" value="Send Message">
+                </form>
+            </div>
+        </div>
+            
+            <!-- Register Form -->
+        <div class="container" id="registrationForm">
+            <div class="logo">
+                <img src="re.webp" alt="Your Logo">
+            </div>
+            <h2>Register</h2>
+            <form action="register.php" method="post" onsubmit="return validateRegistration()">
+                <label for="username">Username:</label>
+                <input type="text" id="reg_username" name="username" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="reg_email" name="email" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="reg_password" name="password" required>
+    
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="reg_confirm-password" name="confirm-password" required>
+    
+                <input type="submit" class="btn" value="Register">
+            </form>
+            <div class="toggle-option">
+                Already have an account? <a href="#" onclick="toggleForms()">Sign In</a>
+            </div>
+        </div>
+    
+        <!-- Sign In Form -->
+        <div class="container" id="signInForm" style="display: none;">
+            <div class="logo">
+                <img src="re.webp" alt="Your Logo">
+            </div>
+            <h2>Sign In</h2>
+            <form action="login.php" method="post">
+                <label for="login_email">Email:</label>
+                <input type="email" id="login_email" name="email" required>
+    
+                <label for="login_password">Password:</label>
+                <input type="password" id="login_password" name="password" required>
+    
+                <input type="submit" class="btn" value="Sign In">
+            </form>
+            <div class="toggle-option">
+                Don't have an account? <a href="#" onclick="toggleForms()">Register</a>
+            </div>
+        </div>
+    
+        <script>
+            function validateRegistration() {
+                var password = document.getElementById("reg_password").value;
+                var confirmPassword = document.getElementById("reg_confirm-password").value;
+    
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match!");
+                    return false;
+                }
+                return true;
+            }
+    
+            function toggleForms() {
+                var regForm = document.getElementById("registrationForm");
+                var signInForm = document.getElementById("signInForm");
+    
+                if (regForm.style.display === "none") {
+                    regForm.style.display = "block";
+                    signInForm.style.display = "none";
+                } else {
+                    regForm.style.display = "none";
+                    signInForm.style.display = "block";
+                }
+            }
+        </script>
+         <div class="ad-container">
+            <img src="Virat-Kohli-Stylechat.jpg" alt="Advertisement" class="ad-image"width="500" height="200">
+            <div class="ad-text">
+                <h2>Special Offer!</h2>
+                <p>Get 50% off on all products. Limited time offer. Shop now!</p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 Nilotpal Roy. All rights reserved.
+        </footer>
+    </body>
+    </html>
+   
